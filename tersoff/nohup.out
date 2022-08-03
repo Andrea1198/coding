@@ -1,0 +1,34 @@
+# integration time step dt =   0.0500
+# sides of the rectangular MD-box L = [  19.6536  25.5308  21.6208 ]
+# density rho =   0.0796
+# VALUES BEFORE CELLS OPTIMIZATIONS
+# cell parameters a =4.9134  8.5103  5.4052
+# mx = 4   my = 3  mz = 4
+# VALUES AFTER CELLS OPTIMIZATIONS
+# cell parameters a =2.8077  2.8368  3.0887
+# mx = 7   my = 9  mz = 7
+# number of lattice cells m = 48
+# number of particles  864 
+# sides of md-box L = [ 19.6536 25.5308 21.6208 ]
+# end of initial lattice construction
+# number of particles of O   N(O ) = 576
+# number of particles of Si  N(Si) = 288
+# cpu time for cristal startup tau=     0.02997
+# reading 864 particle configuration
+# cpu time for reading initial configuration tau=     0.01242
+# Step 0, kt = 300.0 °K w/ gdr
+Traceback (most recent call last):
+  File "/HOME/mcmp3/AndreaPintus/tersoff_MC/run_testMC.py", line 75, in <module>
+    eqmc(EQ, N, kt[i], nstep[i], dt, freq[i], 2, dir, delta, dV0, p_ext)
+  File "/HOME/mcmp3/AndreaPintus/tersoff_MC/src/eqmc.py", line 80, in eqmc
+    enep_fin = calcener_MC(rx, ry, rz, self.sp, self.R, self.R2, self.S2, self.pRSr, self.c2, self.h, self.d2, self.dr2, self.X, self.betan, self.n2r, self.mu, self.lam, self.A, \
+  File "/HOME/mcmp3/AndreaPintus/tersoff_MC/src/calcener_MC.py", line 110, in calcener_MC
+    dy[q]   = rcy[mover]-(rcy[j])
+KeyboardInterrupt
+Command terminated by signal 2
+4.33user 0.14system 0:04.52elapsed 99%CPU (0avgtext+0avgdata 147792maxresident)k
+0inputs+552outputs (0major+35577minor)pagefaults 0swaps
+Traceback (most recent call last):
+  File "E:\coding\tersoff\run_testMC.py", line 13, in <module>
+    from numpy import zeros,pi,sin,cos,empty,array,float64,random,int32
+ModuleNotFoundError: No module named 'numpy'

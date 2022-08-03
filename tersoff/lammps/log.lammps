@@ -1,0 +1,9 @@
+LAMMPS (17 Feb 2022)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+
+
+
+.\tersoff_create_glass.in
+ERROR: Unknown command: .\tersoff_create_glass.in (src/input.cpp:279)
+Last command: .\tersoff_create_glass.in
